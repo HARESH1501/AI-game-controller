@@ -1,0 +1,55 @@
+def get_theme_colors(theme_name: str):
+    themes = {
+        "Dark": {
+            "bg": (10, 10, 10),
+            "wall": (255, 255, 255),
+            "snake_head": (0, 255, 180),
+            "snake_body": (0, 200, 120),
+            "particle": (0, 255, 150),
+            "food_normal": (255, 80, 80),
+            "food_gold": (255, 215, 0),
+            "boss": (255, 0, 0),
+        },
+        "Neon": {
+            "bg": (0, 0, 0),
+            "wall": (0, 255, 255),
+            "snake_head": (0, 255, 255),
+            "snake_body": (0, 200, 255),
+            "particle": (0, 255, 255),
+            "food_normal": (0, 255, 120),
+            "food_gold": (255, 0, 255),
+            "boss": (255, 0, 255),
+        },
+        "Forest": {
+            "bg": (20, 50, 20),
+            "wall": (0, 255, 0),
+            "snake_head": (0, 180, 0),
+            "snake_body": (0, 120, 0),
+            "particle": (0, 150, 0),
+            "food_normal": (255, 0, 0),
+            "food_gold": (255, 215, 0),
+            "boss": (0, 100, 0),
+        },
+        "Fire": {
+            "bg": (30, 0, 0),
+            "wall": (255, 50, 0),
+            "snake_head": (255, 80, 0),
+            "snake_body": (255, 40, 0),
+            "particle": (255, 100, 0),
+            "food_normal": (255, 0, 0),
+            "food_gold": (255, 200, 0),
+            "boss": (255, 0, 0),
+        },
+        "Ice": {
+            "bg": (0, 30, 60),
+            "wall": (0, 200, 255),
+            "snake_head": (0, 180, 255),
+            "snake_body": (0, 150, 255),
+            "particle": (0, 220, 255),
+            "food_normal": (0, 180, 255),
+            "food_gold": (200, 255, 255),
+            "boss": (0, 150, 255),
+        },
+    }
+
+    return themes.get(theme_name, themes["Neon"])
